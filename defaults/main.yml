@@ -7,3 +7,5 @@ newrelic_php_config_default:
   daemon.logfile: /var/log/newrelic/newrelic-daemon.log
 
 newrelic_php_config_combined: "{{ newrelic_php_config_default | combine(newrelic_php_config | default({})) }}"
+ansible_newrelic_agent_php_restart_cmd: "service php8.2-fpm restart"
+php_version: "8.2"
