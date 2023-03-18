@@ -1,0 +1,4 @@
+---
+
+- name: restart php-fpm
+  command: "{{ ansible_newrelic_agent_php_restart_cmd }}"
